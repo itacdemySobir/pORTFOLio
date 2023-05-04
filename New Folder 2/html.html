@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                text-decoration: none;
+            }
+
+            body {
+                background: rgb(34, 34, 34);
+            }
+            
+
+            .container {
+                margin: 0 auto;
+                max-width: 1220px;
+               
+            }
+
+            header {
+                
+                margin-top: 80px;
+            }
+
+            .header-content-text h1 {
+                color: white;
+                margin-top: 20px;
+                font-size: 60px;
+               
+                
+            }
+
+            .header-content-text a {
+                margin: 7px;
+                color: rgba(111, 111, 111);
+            }
+            .header-content-text a:nth-child(3){
+                border-bottom: 1px solid chartreuse;
+            }
+
+            .li{
+                border: 1px solid rgb(34, 34, 34);
+                padding: 15px 70px 10px 5px;
+                background: rgb(26, 26, 26);
+            }
+            .li h2{
+                color: #fff;
+            }
+            .li h5{
+                color: #fff;
+                margin-top: 10px;
+            }
+            .lo{
+                display: flex;
+                justify-content: space-between;
+                margin-top: 70px;
+            }
+           
+            .kio input:nth-child(2){
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .kio input:nth-child(3){
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .kio{
+                margin-top: 80px;
+            }
+            .kio h1{
+                margin-bottom: 20px;
+                color: #fff;
+            }
+            .l{ margin-left: 218px;
+                margin-top: 24px;
+            }
+            .l a{
+               border: 1px solid orange;
+               border-radius:  5px;
+               color: orange;
+               padding: 18px 36px;
+               margin-top: 20px;
+            }
+            .lki{display: flex; align-items: center; justify-content: space-between;}
+            .lki p{
+                color: #fff;
+            }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+          
+<div data-aos="fade-down-right">
+    <div class="header-content-text">
+        <a href="./index.html">Home</a>
+       
+        <a href="./next.html">About</a>
+        <a href="#">Contact</a>
+        <h1>Contact me</h1>
+    </div>
+</div>
+
+                
+            <div class="lo">
+                <div data-aos="fade-right">
+                    <div class="ul">
+                        <div class="li">
+                            <h2>My adress</h2>
+    
+                            <h5>Andijan- Asaka- Tuvadoq 88-house</h5>
+                        </div>
+                        <div style="margin-top: 20px;" class="li">
+                            <h2>My email</h2>
+    
+                            <h5>sab832628@gmail.com</h5>
+                        </div>
+                    </div>
+                </div>
+                
+<div data-aos="fade-up">
+                <img src="./o.webp" alt="">
+</div>
+<div data-aos="fade-left"><div class="lu">
+    <div class="li">
+        <h2>TikTok profile</h2>
+
+        <h5>TikTok-@raketa5</h5>
+    </div>
+    <div style="margin-top: 20px;" class="li">
+        <h2>Call me</h2>
+
+        <a style="color: #fff;" href="">+998-88-661-19-86</a>
+    </div>
+</div></div>
+                
+            </div>
+
+            <div class="lki">
+                <div class="kio">
+                    <h1>Massenge me</h1>
+                    <input type="text" name="" id="" placeholder="Name">
+                    <input type="text" name="" id="" placeholder="Email"> <br><br>
+                    <input style="padding: 5px 210px 120px 5px; border-radius: 10px;" type="text" name="" id="" placeholder="Massenge...   "> <br>
+                <div class="l"><a href="">Enter Massenge</a></div>
+                </div>
+                <div class="lkj">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, odit dolorum. Error, <br> nulla expedita molestias temporibus  enim et tempore quisquam, quia, ratione qui <br> non eveniet perspiciatis adipisci architecto. Voluptatem, architecto?</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </header>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+</html>

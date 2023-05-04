@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            background: rgb(34, 34, 34);
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 1220px;
+             
+        }
+        .nav-links{
+            display: flex;
+           margin-left: 520px;
+            
+        }
+        .nav-links a{
+            
+            margin: 10px;
+            margin-top: 10px;
+            color: rgb(133, 133, 133);
+        }
+        
+        .header-content{
+            text-align: center;
+            margin-top: 20%;
+           
+        }
+        .li {
+            display: flex;
+            justify-content: center;
+            margin-top: 20%;
+        }
+        .title{
+            width: 19ch;
+            color: #fff;
+            font-family: monospace;
+            font-size: 40px;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 4px solid orange;
+            animation: border 0.75s step-end infinite, text 3s steps(19);
+        }
+       
+        .lo p{
+            color: cadetblue;
+        }
+        .lo span{
+            text-align: center;
+            color: aquamarine;
+        }
+        @keyframes border{
+            0%{
+                border-color: orange;
+            }
+            50%{
+                border-color: transparent;
+            }
+            100%{
+                border-color: orange    ;
+            }
+        }
+        @keyframes text{
+            from{
+                width: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+           <center> <h1 style="color: #fff; margin-top: 20px; font-size: 40px;
+            ">Portfolio</h1></center>
+            <div class="header-content">
+                
+                <div class="li">
+                    <h1 class="title">
+                        Hello, I'm Sobirjon
+                    </h1>
+                    
+                </div>
+                <div class="lo">
+                    
+                    <span>About me <br>
+                        |<br>
+                    
+                 \/</span>
+                <nav> 
+                    <div class="nav-links">
+                        <a  href="./index.html">Home</a>
+                        <a href="./next.html">About</a>
+                        <a href="./html.html">Contact</a>
+                    </div>
+                </nav>
+                
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>

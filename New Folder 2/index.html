@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+        body{
+            background: rgb(34, 34, 34);
+        }
+        .container{
+            margin: 0 auto;
+            max-width: 1220px;
+             
+        }
+        .nav-links{
+            display: flex;
+            justify-content: space-between;
+            
+        }
+        .nav-links a{
+            margin-top: 10px;
+            color: rgb(133, 133, 133);
+        }
+        .nav-links a:nth-child(1){
+            border-bottom: 2px solid chartreuse;
+            
+        }
+        .header-content{
+            
+           margin-top: 300px;
+            align-items: center;
+            display: flex;
+            justify-content: space-around;
+        }
+        .header-content-text h2{
+            color: rgb(255, 255, 255);
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div data-aos="fade-up-right">
+                    <div class="header-content-text">
+                    
+                        <h2>Men dasturlashga qiziqaman <br>
+                        va Khalimov IT academy kursida oqiyman</h2>
+                    <nav> 
+                        <div class="nav-links">
+                            <a href="">Home</a>
+                            <a href="./next.html">About</a>
+                            <a href="./html.html">Contact</a>
+                        </div>
+                    </nav>
+                    </div>
+                </div>
+                <div data-aos="fade-up-left"><div class="header-img">
+                    <img style="width: 700px;" src="./i.webp" alt="">
+                </div></div>
+                
+            </div>
+        </div>
+    </header>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+</html>

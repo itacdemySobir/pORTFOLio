@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+        }
+
+        body {
+            background: rgb(34, 34, 34);
+        }
+
+        .container {
+            margin: 0 auto;
+            max-width: 1200px;
+
+        }
+
+        header {
+            
+            margin-top: 80px;
+        }
+        
+
+        .header-content-text h1 {
+            color: white;
+            margin-top: 30px;
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .header-content-text a {
+            margin: 10px;
+            color: rgba(111, 111, 111);
+        }
+        .header-content-text a:nth-child(2
+        ){
+            border-bottom: 1px solid chartreuse;
+        }
+
+        .header-text h1 {
+            color: white;
+        }
+
+        .iop {
+            margin-top: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .n{
+        margin-top: 20px;
+        }
+        .n h2{
+            color: #fff;
+        }
+        
+        .l p{
+            margin-left: 430px;
+        }
+        .l{
+            border: 2px solid white;
+            width: 480px;
+            background: greenyellow;
+        }
+        .p{
+            width: 480px;
+            border: 2px solid white;
+        }
+        .o{
+            
+            width: 240px;
+            background: greenyellow;
+        }
+        .o p{
+            margin-left: 205px;
+        }
+        .u{
+            width: 120px;
+            background: greenyellow;
+        }
+        .section-content{
+            display: flex;
+            justify-content: space-between;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            
+            <div class="header-content">
+                <div class="header-content-text">
+                    <a href="./index.html">Home</a>
+                    <a href="#">About</a>
+                    <a href="./html.html">Contact</a>
+                    <h1>Leran more about me</h1>
+                </div>
+                <div class="iop">
+                    <div class="header-img">
+                        <img src="./i.webp" alt="">
+                    </div>
+                    <div class="header-text">
+                        <h1>> Birthday: 24 junly 2011</h1>
+                        <h1>> Phone: +998 88 661 19 86</h1>
+                        <h1>> City: Andijan, Asaka</h1>
+                        <h1>> Age: 12</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="section-content">
+                <div class="setion-card">
+                   
+                    <div data-aos="fade-down-right">
+                        <div class="n">
+                            <h2>Russian language</h2>
+                            <div class="l">
+                                <p>100%</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-left">
+                        <div class="n">
+                            <h2>html</h2>
+                            <div class="p">
+                                <div class="o">
+                                    <p>50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                        <div data-aos="fade-up-right"><div class="n">
+                            <h2>css</h2>
+                            <div class="p">
+                                <div class="o">
+                                    <p>50%</p>
+                                </div>
+                            </div>
+                        </div></div>
+                    
+
+                </div>
+
+                <div class="lo">
+                    <div data-aos="fade-down">
+                        <div class="n">
+                            <h2>scss</h2>
+                            <div class="p">
+                                <div class="o">
+                                    <p>50%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div data-aos="fade-up">
+                        <div class="n">
+                            <h2>photoshop</h2>
+                            <div class="p">
+                                <div class="u">
+                                    <p>20%</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        
+        AOS.init();
+
+        // You can also pass an optional settings object
+        // below listed default settings
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 120, // offset (in px) from the original trigger point
+            delay: 0, // values from 0 to 3000, with step 50ms
+            duration: 400, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: false, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
+</body>
+
+</html>
